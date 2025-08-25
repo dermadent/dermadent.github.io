@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: dermadent-deployment
+  labels:
+    app: dermadent
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: dermadent
+  template:
+    metadata:
+      labels:
+        app: dermadent
+    spec:
+      containers:
+      - name: dermadent
+        image: rg.fr-par.scw.cloud/djnd/dermadent:latest
+        ports:
+        - containerPort: 80
