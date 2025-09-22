@@ -34,23 +34,25 @@ const HomePage: React.FC<HomePageProps> = ({ onNavigateToHome, onNavigateToDenti
                 onNavigateToDermatology={onNavigateToDermatology}
                 onNavigateToLegal={onNavigateToLegal}
             />
-            <main className="flex-grow w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div className="py-16 md:py-24">
-                     <h1 className="text-4xl md:text-5xl text-center mb-16 font-semibold text-brand-green-dark">
-                        Dobrodošli! Izberite kliniko.
-                    </h1>
-                    <div className="flex flex-wrap justify-center items-stretch gap-10">
-                        {services.map((service) => (
-                            <ServiceCard
-                                key={service.title}
-                                title={service.title}
-                                description={service.description}
-                                graphic={service.graphic}
-                                onAction={service.action}
-                            />
-                        ))}
+            <main className="flex-grow w-full">
+                <section className="bg-brand-green-light">
+                    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
+                        <h1 className="text-4xl md:text-5xl text-center mb-16 font-semibold text-brand-green-dark">
+                            Dobrodošli! Izberite kliniko.
+                        </h1>
+                        <div className="flex flex-wrap justify-center items-stretch gap-10">
+                            {services.map((service) => (
+                                <ServiceCard
+                                    key={service.title}
+                                    title={service.title}
+                                    description={service.description}
+                                    graphic={service.graphic}
+                                    onAction={service.action}
+                                />
+                            ))}
+                        </div>
                     </div>
-                </div>
+                </section>
             </main>
             <Footer />
         </div>
