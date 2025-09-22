@@ -44,7 +44,7 @@ const DentistryPage: React.FC<PageProps> = ({ onNavigateToHome, onNavigateToDent
         {
             title: 'Kako ohraniti zdrave dlesni?',
             description: 'Zdrave dlesni so temelj zdravega nasmeha. Preberite naše nasvete za preprečevanje vnetja in ohranjanje ustne higiene.',
-            imageUrl: 'https://images.unsplash.com/photo-1583344498158-3c3e5c1a8a0c?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+            imageUrl: 'slike/zobozdravstvo-dermadent.png',
             action: onNavigateToNovica1,
         },
         {
@@ -73,7 +73,7 @@ const DentistryPage: React.FC<PageProps> = ({ onNavigateToHome, onNavigateToDent
             <main>
                 <section 
                     className="relative bg-cover bg-center text-white text-center px-4 h-[500px] flex items-center justify-center" 
-                    style={{ backgroundImage: "url('https://www.turkeydentalclinic.com/wp-content/uploads/2024/11/dentist-turkey-antalya.jpg')" }}
+                    style={{ backgroundImage: "url('slike/zobozdravstvo-dermadent.png')" }}
                     role="banner"
                     aria-labelledby="hero-heading"
                 >
