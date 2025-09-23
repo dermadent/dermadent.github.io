@@ -36,7 +36,7 @@ const Novica2Page: React.FC<PageProps> = ({ onNavigateToHome, onNavigateToDentis
                             Prednosti beljenja zob v ordinaciji
                         </h1>
                         <img
-                            src="https://images.unsplash.com/photo-1619451433581-9a71156a6d5a?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            src="/slike/zobozdravstvo-dermadent.png"
                             alt="Sijoč nasmeh po beljenju zob"
                             className="w-full h-auto max-h-[500px] object-cover rounded-lg mb-8 shadow-md"
                         />
