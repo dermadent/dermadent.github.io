@@ -73,7 +73,7 @@ const DentistryPage: React.FC<PageProps> = ({ onNavigateToHome, onNavigateToDent
             <main>
                 <section 
                     className="relative bg-cover bg-center text-white text-center px-4 h-[500px] flex items-center justify-center" 
-                    style={{ backgroundImage: "url('slike/zobozdravstvo-dermadent.png')" }}
+                    style={{ backgroundImage: "url('/slike/zobozdravstvo-dermadent.png')" }}
                     role="banner"
                     aria-labelledby="hero-heading"
                 >
