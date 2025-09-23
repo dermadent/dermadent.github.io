@@ -46,7 +46,7 @@ const DermatologyPage: React.FC<PageProps> = ({ onNavigateToHome, onNavigateToDe
             <main>
                 <section 
                     className="relative bg-cover bg-center text-white text-center px-4 h-[500px] flex items-center justify-center" 
-                    style={{ backgroundImage: "url('slike/dermatologija-dermadent.jpg')" }}
+                    style={{ backgroundImage: "url('/slike/dermatologija-dermadent.jpg')" }}
                     role="banner"
                     aria-labelledby="hero-heading"
                 >

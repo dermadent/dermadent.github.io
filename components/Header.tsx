@@ -31,7 +31,7 @@ const Header: React.FC<HeaderProps> = ({ activePage, onNavigateToHome, onNavigat
                 <div className="flex items-center justify-between">
                     <a href="/" onClick={(e) => handleLinkClick(e, onNavigateToHome)} aria-label="Dermadent homepage">
                         <img 
-                            src="slike/dermadent-logo.jpg" 
+                            src="/slike/dermadent-logo.jpg" 
                             alt="Dermadent Logo" 
                             className="h-12"
                         />
