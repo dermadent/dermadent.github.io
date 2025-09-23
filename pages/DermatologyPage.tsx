@@ -58,15 +58,12 @@ const DermatologyPage: React.FC<PageProps> = ({ onNavigateToHome, onNavigateToDe
                 </section>
 
                 <section id="storitve" className="py-20 px-4 container mx-auto" aria-labelledby="storitve-heading">
-                    <h2 id="storitve-heading" className="text-4xl font-bold text-center mb-16 text-brand-green-dark">Naše dermatološke storitve</h2>
+                    <h2 id="storitve-heading" className="text-4xl font-bold text-center mb-16 text-brand-green-dark">Najpogostejše storitve</h2>
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                         {services.map(service => (
                             <div key={service.title} className="bg-white border border-gray-200 rounded-lg p-6 flex flex-col items-center shadow-sm hover:shadow-xl hover:border-brand-green-accent transition-all duration-300">
-                                <div className="w-20 h-20 rounded-full flex items-center justify-center mb-6 bg-brand-green-light" aria-hidden="true">
-                                <svg xmlns="http://www.w3.org/2000/svg" className="w-8 h-8 text-brand-green" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1.5">
-                                    <path d="M2 9.5C2 9.5 5 11 8 11C11 11 13 8 16 8C19 8 22 9.5 22 9.5" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round"/>
-                                    <path d="M2 14.5C2 14.5 5 16 8 16C11 16 13 13 16 13C19 13 22 14.5 22 14.5" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round"/>
-                                </svg>
+                                <div className="w-[90px] h-[90px] mb-6" aria-hidden="true">
+                                    <img src={service.iconUrl} alt="" className="w-full h-full object-contain" />
                                 </div>
                                 <h3 className="text-2xl font-semibold mb-3 text-brand-green-dark text-center">{service.title}</h3>
                                 <p className="text-brand-text mb-5 flex-grow text-base leading-relaxed text-center w-full">{service.description}</p>
