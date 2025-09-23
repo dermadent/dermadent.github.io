@@ -15,7 +15,7 @@ const HomePage: React.FC<HomePageProps> = ({ onNavigateToHome, onNavigateToDenti
         {
             title: 'Zobozdravstvo',
             description: 'V naši zobozdravstveni ambulanti nudimo celovite storitve, od preventivnih pregledov do zahtevnejših posegov. Skrbimo za zdravje in estetiko vašega nasmeha.',
-            imageUrl: '/slike/zobozdravstvo-dermadent.jpg',
+            imageUrl: '/slike/zobozdravstvo-dermadent.png',
             action: onNavigateToDentistry,
         },
         {
