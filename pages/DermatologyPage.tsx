@@ -10,7 +10,7 @@ interface PageProps {
 }
 
 const services = [
-    { title: 'Prvi dermatološki pregled', description: 'Natančen pregled kože, lasišča in nohtov za oceno vašega stanja in svetovanje o nadaljnjem zdravljenju.', price: 'od 80€' },
+    { title: 'Prvi dermatološki pregled', description: 'Natančen pregled kože, lasišča in nohtov za oceno vašega stanja in svetovanje o nadaljnjem zdravljenju.', price: 'od 80€' iconUrl: '/slike/dermaskopski.jpg' },
     { title: 'Dermoskopski pregled znamenj', description: 'Specialistični pregled kožnih znamenj za zgodnje odkrivanje morebitnih nevarnih sprememb.', price: 'od 80€' },
     { title: 'Neoperativno odstranjevanje znamenj', description: 'Učinkovita in varna odstranitev motečih kožnih izrastkov brez kirurškega posega.', price: 'od 80€' },
     { title: 'Odstranjevanje ne-rakastih sprememb', description: 'Kirurška odstranitev benignih kožnih sprememb, kot so fibromi ali ciste, z minimalnimi brazgotinami.', price: 'od 220€' },

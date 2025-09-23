@@ -15,13 +15,13 @@ const HomePage: React.FC<HomePageProps> = ({ onNavigateToHome, onNavigateToDenti
         {
             title: 'Zobozdravstvo',
             description: 'V naši zobozdravstveni ambulanti nudimo celovite storitve, od preventivnih pregledov do zahtevnejših posegov. Skrbimo za zdravje in estetiko vašega nasmeha.',
-            graphic: 'dentistry' as const,
+            imageUrl: '/slike/dermatologija-dermadent.jpg',
             action: onNavigateToDentistry,
         },
         {
             title: 'Dermatologija',
             description: 'V naši dermatološki ambulanti se posvečamo zdravju vaše kože. Nudimo diagnostiko in zdravljenje kožnih bolezni ter estetske posege.',
-            graphic: 'dermatology' as const,
+            imageUrl: '/slike/zobozdravstvo-dermadent.jpg',
             action: onNavigateToDermatology,
         },
     ];
@@ -46,7 +46,7 @@ const HomePage: React.FC<HomePageProps> = ({ onNavigateToHome, onNavigateToDenti
                                     key={service.title}
                                     title={service.title}
                                     description={service.description}
-                                    graphic={service.graphic}
+                                    imageUrl={service.imageUrl}
                                     onAction={service.action}
                                 />
                             ))}
