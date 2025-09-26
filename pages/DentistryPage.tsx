@@ -13,22 +13,22 @@ interface PageProps {
 }
 
 const services = [
-    { title: 'Zalivke', description: 'Obnovimo poškodovan ali kariozen zob z estetsko in trpežno zalivko.', price: 'od 80€', iconUrl: '/slike/zalivka.jpg' },
-    { title: 'Zdravljenje zoba - endodontija', description: 'Odpravimo vnetje in bolečino ter ohranimo naravno zobno strukturo.', price: 'od 200€', iconUrl: '/slike/zdravljenje_zoba.jpg' },
-    { title: 'Keramična prevleka', description: 'Povrnemo naraven videz in funkcijo z estetsko keramično krono.', price: 'od 330€', iconUrl: '/slike/keramična_prevleka.jpg' },
-    { title: 'Proteza', description: 'Nadomestimo manjkajoče zobe z udobno in funkcionalno zobno protezo.', price: 'od 950€', iconUrl: '/slike/proteza.png' },
-    { title: 'Čiščenje zobnega kamna', description: 'Odstranimo zobni kamen in obloge za bolj zdrave dlesni.', price: 'od 80€', iconUrl: '/slike/zobni-kamen.jpg' },
-    { title: 'Beljenje zob', description: 'Posvetlimo zobe za sijoč in naravno bel nasmeh.', price: 'od 350€', iconUrl: '/slike/beljenje_zob.jpg' },
-    { title: 'Higienski paket', description: 'Čiščenje zobnega kamna + peskanje + poliranje.', price: 'od 80€', iconUrl: '/slike/ostalo.jpg' },
-    { title: 'Paket zdravljenja', description: 'Zdravljenje zoba + keramična prevleka.', price: 'od 500€', iconUrl: '/slike/ostalo.jpg' },
-    { title: '... druge storitve', description: 'Opravljamo tudi druge zobozdravstvene storitve.', price: 'Kontaktirajte nas', iconUrl: '/slike/ostalo.jpg' },
+    { title: 'Zalivke', description: 'Obnovimo poškodovan ali kariozen zob z estetsko in trpežno zalivko.', price: 'od 80€' },
+    { title: 'Zdravljenje zoba - endodontija', description: 'Odpravimo vnetje in bolečino ter ohranimo naravno zobno strukturo.', price: 'od 200€' },
+    { title: 'Keramična prevleka', description: 'Povrnemo naraven videz in funkcijo z estetsko keramično krono.', price: 'od 330€' },
+    { title: 'Proteza', description: 'Nadomestimo manjkajoče zobe z udobno in funkcionalno zobno protezo.', price: 'od 950€' },
+    { title: 'Čiščenje zobnega kamna', description: 'Odstranimo zobni kamen in obloge za bolj zdrave dlesni.', price: 'od 80€' },
+    { title: 'Beljenje zob', description: 'Posvetlimo zobe za sijoč in naravno bel nasmeh.', price: 'od 350€' },
+    { title: 'Higienski paket', description: 'Čiščenje zobnega kamna + peskanje + poliranje.', price: 'od 80€' },
+    { title: 'Paket zdravljenja', description: 'Zdravljenje zoba + keramična prevleka.', price: 'od 500€' },
+    { title: '... druge storitve', description: 'Opravljamo tudi druge zobozdravstvene storitve.', price: 'Kontaktirajte nas' },
 ];
 
 const team = [
-    { name: 'mag. Drago Popovič', title: 'dr.dent.med.', description: 'Specialist za ustne in zobne bolezni' },
-    { name: 'Peter Vezočnik', title: 'dr.dent.med.', description: '' },
-    { name: 'Sebahije Bilali', title: 'medicinska tehnica', description: '' },
-    { name: 'Petra Žniderič', title: 'medicinska tehnica', description: '' },
+    { name: 'mag. Drago Popovič', title: 'dr.dent.med.', description: 'Specialist za ustne in zobne bolezni', imageUrl: '/slike/drago.png?q=80&w=200&h=200&auto=format&fit=crop' },
+    { name: 'Peter Vezočnik', title: 'dr.dent.med.', description: '', imageUrl: '/slike/peter.png?q=80&w=200&h=200&auto=format&fit=crop' },
+    { name: 'Sebahije Bilali', title: 'medicinska tehnica', description: '', imageUrl: '/slike/sebahije.png?q=80&w=200&h=200&auto=format&fit=crop' },
+    { name: 'Petra Žniderič', title: 'medicinska tehnica', description: '', imageUrl: '/slike/petra.png?q=80&w=200&h=200&auto=format&fit=crop' },
 ];
 
 const bookingInfo = [
@@ -44,19 +44,19 @@ const DentistryPage: React.FC<PageProps> = ({ onNavigateToHome, onNavigateToDent
         {
             title: 'Kako ohraniti zdrave dlesni?',
             description: 'Zdrave dlesni so temelj zdravega nasmeha. Preberite naše nasvete za preprečevanje vnetja in ohranjanje ustne higiene.',
-            imageUrl: '/slike/zobozdravstvo-dermadent.png',
+            imageUrl: 'https://images.unsplash.com/photo-1583344498158-3c3e5c1a8a0c?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
             action: onNavigateToNovica1,
         },
         {
             title: 'Prednosti beljenja zob v ordinaciji',
             description: 'Profesionalno beljenje zob je varen in učinkovit postopek, ki vam lahko povrne samozavest. Odkrijte, zakaj je boljše od domačih rešitev.',
-            imageUrl: '/slike/zobozdravstvo-dermadent.png',
+            imageUrl: 'https://images.unsplash.com/photo-1619451433581-9a71156a6d5a?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
             action: onNavigateToNovica2,
         },
         {
             title: 'Otroci in prvi obisk pri zobozdravniku',
             description: 'Prvi obisk pri zobozdravniku je pomemben mejnik. Pripravili smo nekaj nasvetov, kako otroka pripraviti na pozitivno izkušnjo.',
-            imageUrl: '/slike/zobozdravstvo-dermadent.png',
+            imageUrl: 'https://images.unsplash.com/photo-1559743343-a6e5226c6f66?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
             action: onNavigateToNovica3,
         },
     ];
@@ -73,7 +73,7 @@ const DentistryPage: React.FC<PageProps> = ({ onNavigateToHome, onNavigateToDent
             <main>
                 <section 
                     className="relative bg-cover bg-center text-white text-center px-4 h-[500px] flex items-center justify-center" 
-                    style={{ backgroundImage: "url('/slike/zobozdravstvo-dermadent.png')" }}
+                    style={{ backgroundImage: "url('https://www.turkeydentalclinic.com/wp-content/uploads/2024/11/dentist-turkey-antalya.jpg')" }}
                     role="banner"
                     aria-labelledby="hero-heading"
                 >
@@ -89,8 +89,10 @@ const DentistryPage: React.FC<PageProps> = ({ onNavigateToHome, onNavigateToDent
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                         {services.map(service => (
                             <div key={service.title} className="bg-white border border-gray-200 rounded-lg p-6 flex flex-col items-center shadow-sm hover:shadow-xl hover:border-brand-green-accent transition-all duration-300">
-                                <div className="w-[90px] h-[90px] mb-6" aria-hidden="true">
-                                    <img src={service.iconUrl} alt="" className="w-full h-full object-contain" />
+                                <div className="w-20 h-20 rounded-full flex items-center justify-center mb-6 bg-brand-green-light" aria-hidden="true">
+                                <svg xmlns="http://www.w3.org/2000/svg" className="w-8 h-8 text-brand-green" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1.5">
+                                    <path strokeLinecap="round" strokeLinejoin="round" d="M17 2H7C5.34315 2 4 3.34315 4 5V13C4 16.711 7.23401 19.344 11.0028 21.6572C11.5542 22.0163 12.4458 22.0163 12.9972 21.6572C16.766 19.344 20 16.711 20 13V5C20 3.34315 18.6569 2 17 2Z" />
+                                </svg>
                                 </div>
                                 <h3 className="text-2xl font-semibold mb-3 text-brand-green-dark text-center">{service.title}</h3>
                                 <p className="text-brand-text mb-5 flex-grow text-base leading-relaxed text-center w-full">{service.description}</p>
@@ -153,7 +155,11 @@ const DentistryPage: React.FC<PageProps> = ({ onNavigateToHome, onNavigateToDent
                     <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-x-20 gap-y-12">
                        {team.map(member => (
                            <div key={member.name} className="flex items-center">
-                               <div className="w-24 h-24 bg-brand-green-light rounded-full mr-6 flex-shrink-0 border border-brand-green/20" aria-hidden="true"></div>
+                               <img 
+                                   src={member.imageUrl}
+                                   alt={`Portret ${member.name}`}
+                                   className="w-24 h-24 bg-brand-green-light rounded-full mr-6 flex-shrink-0 object-cover border-4 border-white shadow-md"
+                                />
                                <div>
                                    <h3 className="text-xl font-bold text-brand-green-dark">{member.name}</h3>
                                    <p className="text-lg text-brand-green">{member.title}</p>
