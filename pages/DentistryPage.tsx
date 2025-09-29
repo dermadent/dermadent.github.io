@@ -93,11 +93,6 @@ const DentistryPage: React.FC<PageProps> = ({ onNavigateToHome, onNavigateToDent
                                 <div className="w-[90px] h-[90px] mb-6" aria-hidden="true">
                                     <img src={service.iconUrl} alt="" className="w-full h-full object-contain" />
                                 </div>
-                                <div className="w-20 h-20 rounded-full flex items-center justify-center mb-6 bg-brand-green-light" aria-hidden="true">
-                                <svg xmlns="http://www.w3.org/2000/svg" className="w-8 h-8 text-brand-green" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1.5">
-                                    <path strokeLinecap="round" strokeLinejoin="round" d="M17 2H7C5.34315 2 4 3.34315 4 5V13C4 16.711 7.23401 19.344 11.0028 21.6572C11.5542 22.0163 12.4458 22.0163 12.9972 21.6572C16.766 19.344 20 16.711 20 13V5C20 3.34315 18.6569 2 17 2Z" />
-                                </svg>
-                                </div>
                                 <h3 className="text-2xl font-semibold mb-3 text-brand-green-dark text-center">{service.title}</h3>
                                 <p className="text-brand-text mb-5 flex-grow text-base leading-relaxed text-center w-full">{service.description}</p>
                                 <p className="text-brand-green font-medium text-base mt-auto text-center">{service.price}</p>
