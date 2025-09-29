@@ -8,4 +8,4 @@ resources:
 images:
   - name: dermadent
     newName: rg.fr-par.scw.cloud/djnd/dermadent
-    newTag: '1f09fd7ee92d8cf9a0450ea8680e7fa03f09af5e'
+    newTag: '6dbe2b743a6a991323b05562db438d5271d8de3a'
