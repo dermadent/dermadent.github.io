@@ -74,7 +74,7 @@ const DentistryPage: React.FC<PageProps> = ({ onNavigateToHome, onNavigateToDent
             <main>
                 <section 
                     className="relative bg-cover bg-center text-white text-center px-4 h-[500px] flex items-center justify-center" 
-                    style={{ backgroundImage: "url('https://www.turkeydentalclinic.com/wp-content/uploads/2024/11/dentist-turkey-antalya.jpg')" }}
+                    style={{ backgroundImage: "url('/slike/zobozdravstvo-dermadent.png')" }}
                     role="banner"
                     aria-labelledby="hero-heading"
                 >
@@ -90,6 +90,9 @@ const DentistryPage: React.FC<PageProps> = ({ onNavigateToHome, onNavigateToDent
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                         {services.map(service => (
                             <div key={service.title} className="bg-white border border-gray-200 rounded-lg p-6 flex flex-col items-center shadow-sm hover:shadow-xl hover:border-brand-green-accent transition-all duration-300">
+                                <div className="w-[90px] h-[90px] mb-6" aria-hidden="true">
+                                    <img src={service.iconUrl} alt="" className="w-full h-full object-contain" />
+                                </div>
                                 <div className="w-20 h-20 rounded-full flex items-center justify-center mb-6 bg-brand-green-light" aria-hidden="true">
                                 <svg xmlns="http://www.w3.org/2000/svg" className="w-8 h-8 text-brand-green" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1.5">
                                     <path strokeLinecap="round" strokeLinejoin="round" d="M17 2H7C5.34315 2 4 3.34315 4 5V13C4 16.711 7.23401 19.344 11.0028 21.6572C11.5542 22.0163 12.4458 22.0163 12.9972 21.6572C16.766 19.344 20 16.711 20 13V5C20 3.34315 18.6569 2 17 2Z" />
