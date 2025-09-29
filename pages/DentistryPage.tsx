@@ -16,8 +16,7 @@ const services = [
    { title: 'Zalivke', description: 'Obnovimo poškodovan ali kariozen zob z estetsko in trpežno zalivko.', price: 'od 80€', iconUrl: '/slike/zalivka.jpg' },
     { title: 'Zdravljenje zoba - endodontija', description: 'Odpravimo vnetje in bolečino ter ohranimo naravno zobno strukturo.', price: 'od 200€', iconUrl: '/slike/zdravljenje_zoba.jpg' },
     { title: 'Keramična prevleka', description: 'Povrnemo naraven videz in funkcijo z estetsko keramično krono.', price: 'od 330€', iconUrl: '/slike/keramična_prevleka.jpg' },
-    { title: 'Proteza', description: 'Nadomestimo manjkajoče zobe z udobno in funkcionalno zobno protezo.', price: 'od 950€', iconUrl: '/slike/proteza.jpg' },
-    { title: 'Čiščenje zobnega kamna', description: 'Odstranimo zobni kamen in obloge za bolj zdrave dlesni.', price: 'od 80€', iconUrl: '/slike/zobni-kamen.png' },
+
     { title: 'Proteza', description: 'Nadomestimo manjkajoče zobe z udobno in funkcionalno zobno protezo.', price: 'od 950€', iconUrl: '/slike/proteza.png' },
     { title: 'Čiščenje zobnega kamna', description: 'Odstranimo zobni kamen in obloge za bolj zdrave dlesni.', price: 'od 80€', iconUrl: '/slike/zobni-kamen.jpg' },
     { title: 'Beljenje zob', description: 'Posvetlimo zobe za sijoč in naravno bel nasmeh.', price: 'od 350€', iconUrl: '/slike/beljenje_zob.jpg' },
