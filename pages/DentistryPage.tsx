@@ -13,15 +13,16 @@ interface PageProps {
 }
 
 const services = [
-    { title: 'Zalivke', description: 'Obnovimo poškodovan ali kariozen zob z estetsko in trpežno zalivko.', price: 'od 80€' },
-    { title: 'Zdravljenje zoba - endodontija', description: 'Odpravimo vnetje in bolečino ter ohranimo naravno zobno strukturo.', price: 'od 200€' },
-    { title: 'Keramična prevleka', description: 'Povrnemo naraven videz in funkcijo z estetsko keramično krono.', price: 'od 330€' },
-    { title: 'Proteza', description: 'Nadomestimo manjkajoče zobe z udobno in funkcionalno zobno protezo.', price: 'od 950€' },
-    { title: 'Čiščenje zobnega kamna', description: 'Odstranimo zobni kamen in obloge za bolj zdrave dlesni.', price: 'od 80€' },
-    { title: 'Beljenje zob', description: 'Posvetlimo zobe za sijoč in naravno bel nasmeh.', price: 'od 350€' },
-    { title: 'Higienski paket', description: 'Čiščenje zobnega kamna + peskanje + poliranje.', price: 'od 80€' },
-    { title: 'Paket zdravljenja', description: 'Zdravljenje zoba + keramična prevleka.', price: 'od 500€' },
-    { title: '... druge storitve', description: 'Opravljamo tudi druge zobozdravstvene storitve.', price: 'Kontaktirajte nas' },
+   { title: 'Zalivke', description: 'Obnovimo poškodovan ali kariozen zob z estetsko in trpežno zalivko.', price: 'od 80€', iconUrl: '/slike/zalivka.jpg' },
+    { title: 'Zdravljenje zoba - endodontija', description: 'Odpravimo vnetje in bolečino ter ohranimo naravno zobno strukturo.', price: 'od 200€', iconUrl: '/slike/zdravljenje_zoba.jpg' },
+    { title: 'Keramična prevleka', description: 'Povrnemo naraven videz in funkcijo z estetsko keramično krono.', price: 'od 330€', iconUrl: '/slike/keramična_prevleka.jpg' },
+    { title: 'Proteza', description: 'Nadomestimo manjkajoče zobe z udobno in funkcionalno zobno protezo.', price: 'od 950€', iconUrl: '/slike/proteza.jpg' },
+    { title: 'Čiščenje zobnega kamna', description: 'Odstranimo zobni kamen in obloge za bolj zdrave dlesni.', price: 'od 80€', iconUrl: '/slike/zobni-kamen.png' },
+    { title: 'Proteza', description: 'Nadomestimo manjkajoče zobe z udobno in funkcionalno zobno protezo.', price: 'od 950€', iconUrl: '/slike/proteza.png' },
+    { title: 'Čiščenje zobnega kamna', description: 'Odstranimo zobni kamen in obloge za bolj zdrave dlesni.', price: 'od 80€', iconUrl: '/slike/zobni-kamen.jpg' },
+    { title: 'Beljenje zob', description: 'Posvetlimo zobe za sijoč in naravno bel nasmeh.', price: 'od 350€', iconUrl: '/slike/beljenje_zob.jpg' },
+    { title: 'Higienski paket', description: 'Čiščenje zobnega kamna + peskanje + poliranje.', price: 'od 80€', iconUrl: '/slike/ostalo.jpg' },
+    { title: 'Paket zdravljenja', description: 'Zdravljenje zoba + keramična prevleka.', price: 'od 500€', iconUrl: '/slike/ostalo.jpg' },
 ];
 
 const team = [
@@ -44,19 +45,19 @@ const DentistryPage: React.FC<PageProps> = ({ onNavigateToHome, onNavigateToDent
         {
             title: 'Kako ohraniti zdrave dlesni?',
             description: 'Zdrave dlesni so temelj zdravega nasmeha. Preberite naše nasvete za preprečevanje vnetja in ohranjanje ustne higiene.',
-            imageUrl: 'https://images.unsplash.com/photo-1583344498158-3c3e5c1a8a0c?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+            imageUrl: '/slike/zobozdravstvo-dermadent.png',
             action: onNavigateToNovica1,
         },
         {
             title: 'Prednosti beljenja zob v ordinaciji',
             description: 'Profesionalno beljenje zob je varen in učinkovit postopek, ki vam lahko povrne samozavest. Odkrijte, zakaj je boljše od domačih rešitev.',
-            imageUrl: 'https://images.unsplash.com/photo-1619451433581-9a71156a6d5a?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+            imageUrl: '/slike/zobozdravstvo-dermadent.png',
             action: onNavigateToNovica2,
         },
         {
             title: 'Otroci in prvi obisk pri zobozdravniku',
             description: 'Prvi obisk pri zobozdravniku je pomemben mejnik. Pripravili smo nekaj nasvetov, kako otroka pripraviti na pozitivno izkušnjo.',
-            imageUrl: 'https://images.unsplash.com/photo-1559743343-a6e5226c6f66?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+            imageUrl: '/slike/zobozdravstvo-dermadent.png',
             action: onNavigateToNovica3,
         },
     ];
