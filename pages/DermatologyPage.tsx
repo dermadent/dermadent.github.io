@@ -19,7 +19,7 @@ const services = [
 ];
 
 const team = [
-    { name: 'Bojan Popovič', title: 'dr.med.,univ.dipl.prav.', description: 'specialist dermatovenerolog' },
+    { name: 'mag. Drago Popovič', title: 'dr.dent.med.', description: 'Specialist za ustne in zobne bolezni', imageUrl: '/slike/drago.png?q=80&w=200&h=200&auto=format&fit=crop' },
     { name: 'prim.mag. Ranka Rajakovič Popovič', title: 'dr.med.', description: 'specialistka dermatovenerologinja' },
     { name: 'Petra Žniderič', title: 'medicinska tehnica', description: '' },
     { name: 'Sebahije Bilali', title: 'medicinska tehnica', description: '' },
@@ -102,7 +102,11 @@ const DermatologyPage: React.FC<PageProps> = ({ onNavigateToHome, onNavigateToDe
                     <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-x-20 gap-y-12">
                        {team.map(member => (
                            <div key={member.name} className="flex items-center">
-                               <div className="w-24 h-24 bg-brand-green-light rounded-full mr-6 flex-shrink-0 border border-brand-green/20" aria-hidden="true"></div>
+                               <img 
+                                   src={member.imageUrl}
+                                   alt={`Portret ${member.name}`}
+                                   className="w-24 h-24 bg-brand-green-light rounded-full mr-6 flex-shrink-0 object-cover border-4 border-white shadow-md"
+                                />
                                <div>
                                    <h3 className="text-xl font-bold text-brand-green-dark">{member.name}</h3>
                                    <p className="text-lg text-brand-green">{member.title}</p>
