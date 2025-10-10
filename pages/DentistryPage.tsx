@@ -25,7 +25,6 @@ const services = [
 ];
 
 const team = [
-    { name: 'mag. Drago Popovič', title: 'dr.dent.med.', description: 'Specialist za ustne in zobne bolezni', imageUrl: '/slike/drago.png?q=80&w=200&h=200&auto=format&fit=crop' },
     { name: 'Peter Vezočnik', title: 'dr.dent.med.', description: '', imageUrl: '/slike/peter.png?q=80&w=200&h=200&auto=format&fit=crop' },
     { name: 'Sebahije Bilali', title: 'medicinska tehnica', description: '', imageUrl: '/slike/sebahije.png?q=80&w=200&h=200&auto=format&fit=crop' },
     { name: 'Petra Žniderič', title: 'medicinska tehnica', description: '', imageUrl: '/slike/petra.png?q=80&w=200&h=200&auto=format&fit=crop' },
@@ -34,7 +33,7 @@ const team = [
 const bookingInfo = [
     { title: 'Prvi obisk', content: ['Pokličite na telefonsko številko 01 519 77 14 ali pošljite priložen obrazec po telefaksu na številko 01 519 78 25.', 'Izbira zobozdravnika in termin: Če želite, si lahko sami izberete zobozdravnika Dermadenta, sicer vam zobozdravnika dodeli asistentka glede na vrsto težav in proste termine.', 'Ob obisku s seboj prinesite:\n· osebni dokument (os. izkaznica, potni list ali vozniško dovoljenje);\n· nekaj gotovine ali plačilno kartico.', 'Cena prvega pregleda: 45,00 €'] },
     { title: 'Ponovni obisk', content: ['Če ste se za termin dogovorili ob predhodnem obisku, se vam ni treba posebej naročati.', 'Če za termin niste dogovorjeni pokličite na telefonsko številko 01 519 77 14 ali pošljite priložen obrazec na številko 01 519 78 25.', 'Če želite že dogovorjeni termin spremeniti, pokličite na telefonsko številko 01 519 77 14.', 'Ob obisku s seboj prinesite naročilni kartonček, ostale dokumente, ki sta jih naročila zdravnik ali asistentka.'] },
-    { title: 'Preventivni pregled', content: ['Ali je minilo že 6 mesecev od vašega zadnjega obiska v Dermadentu?', 'V tem primeru vam priporočamo, da se zglasite na preventivni pregled, ki je brezplačen.', 'S preventivnim pregledom skrbite za zdravje svojih zob, zmanjšujete potrebo po zahtevnih zobozdravstvenih postopkih v naslednjih letih in desetletjih življenja.'] },
+    { title: 'Preventivni pregled', content: ['Ali je minilo že 6 mesecev od vašega zadnjega obiska v Dermadentu?', 'V tem primeru vam priporočamo, da se zglasite na preventivni pregled.', 'S preventivnim pregledom skrbite za zdravje svojih zob, zmanjšujete potrebo po zahtevnih zobozdravstvenih postopkih v naslednjih letih in desetletjih življenja.'] },
     { title: 'Bolečina', content: ['· pokličite telefonsko številko 01 519 77 14 in povejte, da kličete zaradi bolečine;', '· dobili boste prvi možni termin za obisk in navodila za ravnanje do obiska;', '· če ste že stranka Dermadenta ob obisku prinesite naročilni kartonček, če pa še niste stranka Dermadenta pa osebni dokument'] },
 ];
 
