@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body {
+  margin: 0;
+  padding-block: 48px;
+  background-color: rgb(240, 245, 241);
+  font-family: "Poppins", sans-serif;
+}
+
+p {
+  margin: 0;
+}
+
+body > br {
+  display: none;
+}
+
+body > * {
+  display: block;
+  max-width: 750px;
+  margin-inline: auto;
+  padding-inline: 16px;
+  font-size: 18px;
+}
+
+body > b {
+  margin-bottom: 18px;
+  font-size: 20px;
+  text-transform: capitalize;
+}
+
+body > div > p > br:first-of-type {
+  display: block;
+  margin-top: 16px;
+}
+
+body > div > p {
+  margin-bottom: 24px;
+}
+
+body > form[name="vpisnarocila"] {
+  display: grid;
+  align-items: center;
+  gap: 16px;
+  grid-template-columns: 1fr 1fr;
+}
+
+body > form[name="vpisnarocila"] > div:nth-child(1) {
+  grid-column: 1 / -1;
+  display: grid;
+  align-items: center;
+  gap: 16px;
+  grid-template-columns: subgrid;
+}
+
+body > form[name="vpisnarocila"] > div:nth-child(2) {
+  grid-column: 1 / -1;
+  display: grid;
+  align-items: center;
+  gap: 16px;
+  grid-template-columns: subgrid;
+
+  & > div {
+    grid-column: 1 / -1;
+    display: grid;
+    align-items: center;
+    gap: 16px;
+    grid-template-columns: subgrid;
+
+    & > div {
+      grid-column: 1 / -1;
+      display: grid;
+      align-items: center;
+      gap: 16px;
+      grid-template-columns: subgrid;
+    }
+  }
+}
+
+body > form input[type="text"],
+body > form input[type="date"],
+body > form select {
+  width: 100%;
+  padding: 8px 10px;
+  background: #fff;
+  border: 1px solid rgb(93 170 104);
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+    rgba(0, 0, 0, 0.05) 0px 1px 2px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px;
+  font-family: inherit;
+  font-size: 14px;
+}
+
+body > form input[type="submit"] {
+  grid-column: 1 / -1;
+  width: auto !important;
+  max-width: min-content;
+  justify-self: center;
+  padding: 12px 48px;
+  background-color: rgb(93, 170, 104);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 20px;
+  color: #fff;
+  text-transform: uppercase;
+
+  &:hover {
+    background-color: rgb(74, 124, 89);
+  }
+}
+
+body > form[name="vpisstranke"] {
+  display: grid !important;
+  align-items: center;
+  gap: 16px;
+  grid-template-columns: 1fr 1fr;
+
+  & > p {
+    grid-column: 1 / -1;
+    display: grid;
+    align-items: center;
+    gap: 16px;
+    grid-template-columns: subgrid;
+  }
+}
