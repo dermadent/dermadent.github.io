@@ -1,8 +1,10 @@
 name: Automatic PRs
+
 on:
   push:
     branches:
       - "main"
+
 jobs:
   pull_requests:
     name: Automatic PRs
