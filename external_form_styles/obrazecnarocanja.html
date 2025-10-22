@@ -1,0 +1,40 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="inputsytle.css">
+
+</head>
+
+
+
+<div><html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="inputsytle.css">
+
+</head>
+
+
+<p>Prvi razpoložljivi samoplačniški termini po zdravnikih:</br>Bojan Popovič-dermatolog: 10.11.2025 ob 07:45</br>Ranka Popovič-dermatolog: 22.10.2025 ob 15:00</br>Peter Vezočnik-zobozdravnik: 20.10.2025 ob 08:00</br></p></div>
+<form name="vpisnarocila" method="post" action="https://www.derma-dent.eu/narocanjestrank.php" target="knjiga">
+<div>Željeni datum pregleda<input type="date" name="datum"></input></div>
+  <div>Zdravnik: <select name="delavec">
+  <option name="delavec" value="0">Katerikoli</option>
+    <option name="delavec" value="3">3 Popovič Bojan</option>
+      <option name="delavec" value="4">4 Popovič Drago</option>
+      <option name="delavec" value="6">6 Popovič Ranka</option>
+      <option name="delavec" value="9">9 Vezočnik Peter</option>
+
+  </select><div>
+
+
+<div>Dejavnost:<select name="SM"></div>
+ <option name="SM" value="2">2 zobozdravstvo</option>
+ <option name="SM" value="3">3 dermatologija</option>
+ <option name="SM" value="4">4 pravne storitve</option>
+
+</select>
+<input type="hidden" name="idstranke" value=""/>
+<input type="hidden" name="vir" value="vpisanastranka"/>
+<input type="submit" name="submit" value="poišči termine"></input>
+</form>

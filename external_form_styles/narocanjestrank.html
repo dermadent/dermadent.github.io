@@ -1,0 +1,57 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="inputsytle.css">
+
+</head>
+
+
+<style>
+input
+  {
+  width:3cm;
+  display:inline-block;
+  border:1px
+  border-style:solid;
+  }
+input[type=submit]
+  {
+  width:1.5cm;
+  display:inline-block;
+  }
+table
+  {
+  border-collapse:collapse;
+
+  }
+table, td ,th
+  {
+border: 1px solid black;
+  }
+#novanarocila
+input
+  {
+  width:3cm;
+  display:inline-block;
+  border:1px
+  }
+
+</style>
+
+</br><b>torek,14.10.2025</b></br>
+<form name="vpisstranke" method="post" action="potrditevrezervacije.php" style="display:inline">
+Izberite željeno uro obiska: <select name="zapst" required>
+</select>(če se ne izpiše noben termin, se na ta dan pri izbranem zdravniku ne morete naročiti)
+
+<p>Priimek stranke:<input type="text" name="stranka_priimek" value="" required/></p>
+<p>Ime stranke: <input type="text" name="stranka_ime" value="" required></p>
+<p>Telefonska številka:<input type="text" name="telefon" value="" required></p>
+<p>Elektronski naslov:<input type="text" name="email" value=""></p>
+<p>Razlog obiska: <input type="text" name="razlog" required></p>
+
+<input type="hidden" name="SM" value="2"/>
+<input type="hidden" name="delavec" value="0"/>
+
+<td style="width:auto"><input style="width:3cm" type="submit" name="submit" value="Rezerviraj termin"/><td>
+
+</form>
