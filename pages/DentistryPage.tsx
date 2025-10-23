@@ -26,8 +26,8 @@ const services = [
 
 const team = [
     { name: 'Peter Vezočnik', title: 'dr.dent.med.', description: '', imageUrl: '/slike/peter.png?q=80&w=200&h=200&auto=format&fit=crop' },
-    { name: 'Sebahije Bilali', title: 'medicinska tehnica', description: '', imageUrl: '/slike/sebahije.png?q=80&w=200&h=200&auto=format&fit=crop' },
-    { name: 'Petra Žniderič', title: 'medicinska tehnica', description: '', imageUrl: '/slike/petra.png?q=80&w=200&h=200&auto=format&fit=crop' },
+    { name: 'Sebahije Bilali', title: 'medicinska tehnica, SMS', description: '', imageUrl: '/slike/sebahije.png?q=80&w=200&h=200&auto=format&fit=crop' },
+    { name: 'Petra Žniderič', title: 'medicinska tehnica, SMS, dipl. ekon.', description: '', imageUrl: '/slike/petra.png?q=80&w=200&h=200&auto=format&fit=crop' },
 ];
 
 const bookingInfo = [
