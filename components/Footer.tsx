@@ -14,7 +14,8 @@ const Footer: React.FC = () => {
                         <p className="mb-1 opacity-70">Naselje Vodnikov dvor, Šiška</p>
                         <p className="mb-1 opacity-70">Na jami 16</p>
                         <p className="mb-3 opacity-70">1000 Ljubljana</p>
-                        <p className="mb-1 opacity-70">tel.: <a href="tel:+38615197714" className="hover:underline opacity-100 transition-opacity">01 5197714</a></p>
+                        <p className="mb-1 opacity-70">tel.: <a href="tel:+38615197714" className="hover:underline opacity-100 transition-opacity">05 90 98 642</a></p>
+                        <p className="mb-1 opacity-70">tel.: <a href="tel:+38615197714" className="hover:underline opacity-100 transition-opacity">01 519 77 14</a></p>
                         <p className="opacity-70"><a href="mailto:info@dermadent.si" className="hover:underline opacity-100 transition-opacity">info@dermadent.si</a></p>
                     </div>
 
