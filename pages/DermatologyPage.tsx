@@ -19,15 +19,14 @@ const services = [
 ];
 
 const team = [
-    { name: 'mag. Drago Popovič', title: 'dr.dent.med.', description: 'Specialist za ustne in zobne bolezni', imageUrl: '/slike/drago.png?q=80&w=200&h=200&auto=format&fit=crop' },
-    { name: 'prim.mag. Ranka Rajakovič Popovič', title: 'dr.med.', description: 'specialistka dermatovenerologinja' },
-    { name: 'Petra Žniderič', title: 'medicinska tehnica', description: '' },
-    { name: 'Sebahije Bilali', title: 'medicinska tehnica', description: '' },
+    { name: 'dr. Bojan Popovič', title: 'dr.med., univ. dipl, prav.,', description: 'Specialist dermatovenerolog in direktor', imageUrl: '/slike/drago.png?q=80&w=200&h=200&auto=format&fit=crop' },
+    { name: 'Sebahije Bilali', title: 'medicinska tehnica, SMS', description: '', imageUrl: '/slike/sebahije.png?q=80&w=200&h=200&auto=format&fit=crop' },
+    { name: 'Petra Žniderič', title: 'medicinska tehnica, SMS, dipl. ekon.', description: '', imageUrl: '/slike/petra.png?q=80&w=200&h=200&auto=format&fit=crop' },
 ];
 
 const bookingInfo = [
-    { title: 'Prvi obisk', content: ['Pokličite na telefonsko številko 01 519 77 14 ali pošljite priložen obrazec po telefaksu na številko 01 519 78 25.', 'Izbira zdravnika in termin: Če želite, si lahko sami izberete zdravnika Dermadenta, sicer vam zdravnika dodeli asistentka glede na vrsto težav in proste termine.', 'Ob obisku s seboj prinesite:\n· osebni dokument (os. izkaznica, potni list ali vozniško dovoljenje);\n· nekaj gotovine ali plačilno kartico.', 'Cena prvega pregleda: 80,00 €'] },
-    { title: 'Ponovni obisk', content: ['Če ste se za termin dogovorili ob predhodnem obisku, se vam ni treba posebej naročati.', 'Če za termin niste dogovorjeni pokličite na telefonsko številko 01 519 77 14 ali pošljite priložen obrazec na številko 01 519 78 25.', 'Če želite že dogovorjeni termin spremeniti, pokličite na telefonsko številko 01 519 77 14.', 'Ob obisku s seboj prinesite naročilni kartonček, ostale dokumente, ki sta jih naročila zdravnik ali asistentka.'] },
+    { title: 'Prvi obisk', content: ['Pokličite na telefonsko številko 01 519 77 14 ali <a href="http://www.derma-dent.eu/obrazecnarocanja.php">se naročite</a> preko spleta.', 'Izbira zdravnika in termin: Če želite, si lahko sami izberete zdravnika Dermadenta, sicer vam zdravnika dodeli asistentka glede na vrsto težav in proste termine.', 'Ob obisku s seboj prinesite:\n· osebni dokument (os. izkaznica, potni list ali vozniško dovoljenje);\n· nekaj gotovine ali plačilno kartico.', 'Cena prvega pregleda: 80,00 €'] },
+    { title: 'Ponovni obisk', content: ['Če ste se za termin dogovorili ob predhodnem obisku, se vam ni treba posebej naročati.', 'Če za termin niste dogovorjeni pokličite na telefonsko številko 01 519 77 14 ali <a href="http://www.derma-dent.eu/obrazecnarocanja.php">se naročite</a> preko spleta.', 'Če želite že dogovorjeni termin spremeniti, pokličite na telefonsko številko 01 519 77 14.', 'Ob obisku s seboj prinesite naročilni kartonček, ostale dokumente, ki sta jih naročila zdravnik ali asistentka.'] },
     { title: 'Preventivni pregled', content: ['Ali je minilo že 6 mesecev od vašega zadnjega obiska v Dermadentu?', 'V tem primeru vam priporočamo, da se zglasite na preventivni pregled.', 'S preventivnim pregledom skrbite za zdravje svoje kože in zmanjšujete potrebo po zahtevnih dermatoloških postopkih v prihodnosti.'] },
     { title: 'Nujna stanja', content: ['· pokličite telefonsko številko 01 519 77 14 in povejte, da kličete zaradi nujnega stanja;', '· dobili boste prvi možni termin za obisk in navodila za ravnanje do obiska;', '· če ste že stranka Dermadenta ob obisku prinesite naročilni kartonček, če pa še niste stranka Dermadenta pa osebni dokument'] },
 ];
@@ -91,7 +90,7 @@ const DermatologyPage: React.FC<PageProps> = ({ onNavigateToHome, onNavigateToDe
                     <div className="text-center mt-16">
                         <p className="text-2xl text-brand-text mb-6 max-w-2xl mx-auto">Pripravljeni na zdravo in sijočo kožo? Naročite se na pregled še danes.</p>
                         <button className="bg-brand-green-accent hover:bg-brand-green text-white text-xl font-medium py-3 px-12 rounded-lg transition-colors">
-                            Naročite se
+                             <a href="http://www.derma-dent.eu/obrazecnarocanja.php">Naročite se</a>
                         </button>
                     </div>
                   </div>
@@ -130,8 +129,11 @@ const DermatologyPage: React.FC<PageProps> = ({ onNavigateToHome, onNavigateToDe
                                 <p>1000 Ljubljana</p>
                             </address>
                             <div className="text-brand-text text-lg space-y-1 mb-6">
-                                <p><a href="tel:+38615197714" className="hover:text-brand-green">+386 1 5197714</a></p>
-                                <p><a href="mailto:info@dermadent.si" className="hover:text-brand-green">info@dermadent.si</a></p>
+                            <p className="text-brand-text text-lg">Avtobus št. 7</p>                     
+                            <h4 className="text-xl font-semibold mb-2 text-brand-green-dark">Kontakt:</h4>
+                            <p className="text-brand-text text-lg">05 90 98 642</p>
+                            <p className="text-brand-text text-lg">01 519 77 14</p>
+                            <p><a href="mailto:info@dermadent.si" className="hover:text-brand-green">info@dermadent.si</a></p>
                             </div>
                             <h4 className="text-xl font-semibold mb-2 text-brand-green-dark">Delovni čas:</h4>
                             <p className="text-brand-text text-lg">ponedeljek - petek: 08:00-18:30</p>

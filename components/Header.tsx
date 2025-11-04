@@ -45,7 +45,7 @@ const Header: React.FC<HeaderProps> = ({ activePage, onNavigateToHome, onNavigat
                             <a href="#" onClick={(e) => handleLinkClick(e, onNavigateToLegal)} className={activePage === 'legal' ? activeNavLinkClasses : navLinkClasses}>Pravne storitve</a>
                         </nav>
                         <button className="bg-brand-green-accent hover:bg-brand-green text-white text-lg font-medium py-2 px-6 rounded-lg transition-colors">
-                            Naroči se
+                           <a href="http://www.derma-dent.eu/obrazecnarocanja.php">Naroči se</a>
                         </button>
                     </div>
 
