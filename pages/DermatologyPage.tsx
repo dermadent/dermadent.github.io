@@ -19,7 +19,7 @@ const services = [
 ];
 
 const team = [
-    { name: 'dr. Bojan Popovič', title: 'dr.med., univ. dipl, prav.,', description: 'Specialist dermatovenerolog in direktor', imageUrl: '/slike/drago.png?q=80&w=200&h=200&auto=format&fit=crop' },
+    { name: 'Bojan Popovič', title: 'dr.med., univ. dipl, prav.,', description: 'Specialist dermatovenerolog in direktor', imageUrl: '/slike/drago.png?q=80&w=200&h=200&auto=format&fit=crop' },
     { name: 'Sebahije Bilali', title: 'medicinska tehnica, SMS', description: '', imageUrl: '/slike/sebahije.png?q=80&w=200&h=200&auto=format&fit=crop' },
     { name: 'Petra Žniderič', title: 'medicinska tehnica, SMS, dipl. ekon.', description: '', imageUrl: '/slike/petra.png?q=80&w=200&h=200&auto=format&fit=crop' },
 ];
